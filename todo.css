@@ -72,6 +72,7 @@ button {
     font-size: 1.25 rem;
     font-weight: 700;
     background-image: linear-gradient(to right, var(--pink), var(--purple));
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     cursor: pointer;
@@ -144,13 +145,16 @@ main {
     opacity: 0.8;
 }
 
-.task .actions button:hover {
+.task .actions button:active {
     opacity: 0.6;
 }
 
 .task .actions .edit {
-    margin-right: 0.5rem;
-    background-color: var(--pink);
+    background-image: linear-gradient(to right, var(--pink), var(--purple));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
 
 .task .actins .delete {
